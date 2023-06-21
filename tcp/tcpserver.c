@@ -25,7 +25,7 @@ void main(int argc ,char* argv[]){
     newsockfd=accept(serv_sockfd,(struct sockaddr *)&client_addr,&client);
 
 
-    n=read(newsockfd,buffer,34);
+    n=read(newsockfd,&i,sizeof(i));
     printf("%s",buffer);
     
 
